@@ -1,0 +1,46 @@
+---------BUILD WEB SITE(ALL RESPONSIVE)-----------------
+	【PAGE SET UP】--first page free-- add page 1,500yen
+	【SECTION FIRST VIEW】--design--4,500yen --coding--5,500yen
+	【SECTION OTHER*】--design--4,000yen --coding--5,000yen
+	【NAVIGATION MENU】--design--4,500yen --coding--5,500yen
+	【CALL TO ACTION(BUTTON)】--design--3,500yen --coding--4,000yen
+	【FORM】--design--4,500yen --coding--5,500yen --program--6,000yen
+ 	【BLOG】--design--8,000yen --coding--10,000yen
+	【PHOTO】750yen(a piece)
+	【wrighting】2,500yen(a section)
+	*OTHER SECTION IS "FEATURE","EMPATHY","SOLUTION","COMPARE","CONFIDENCE","ANXIOUS","EMOTION","ABOUT US","COMPANY","CASE STUDY","PRODUCT",OTHER.
+	HOWEVER EVERY SECTION IS within wide 375px height 2000px. MAXIM TEXT IS 4,600.
+
+---------OPERATION & MANAGEMENT---------
+
+<COST>
+	【SERVER】star server 6,600yen a year / 550yen a month
+	【domain】3,000yen a year / 250yen a month
+	【SSL】1,650yen a year / 138yen a month
+
+<hanaO VALUE>---UP LOAD ONLY---
+	【SERVER】850yen(a month)
+	【domain】500yen(a month)
+	【SSL】350yen(a month)
+	【UPLOAD COST】280yen(a month)
+	【TOTAL】1980yen
+
+<hanaO OPTION VALUE>---ADD SERVICE---
+	---SEO---
+	【GOOGLE INDEX REGISTRATIOM】300yen(a month)
+	【SERCH ENGINE OPTIMAIZATION】-SIMPLE (ADVICE) PLAN- 1,050yen(a month)　-REGULAR PLAN- ???
+	【ACCESS REPORT】500yen(a month)
+	【TOTAL】1850yen(a month)→【SET VALLUE】1,500yen(a month)
+
+	---REPLACE---
+	【TEXT】1,200yen(one time) 2,000yen(all time)
+	【IMAGE】1,500yen(one time) 2,500yen(all time)
+	【TEXT & IMAGE SET VALUE】4,500yen → 3,500yen(a month)
+	【NAVIGATION】5,500yen(one time)
+	【FORM】15,000yen(one time)
+	【RESTRUCTURE】7,500yen(one section)
+	【OTHRE】3,000yen(1H)
+
+<hanaO OPERATION & MANAGEMENT TOTAL VALUE>
+	【UPLOAD + SEOSET】3,480yen(a month)
+	【UPLOAD + SEOSET + REPLACE(TEXT & IMAGE SET)】6,980yen
