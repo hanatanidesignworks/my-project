@@ -174,12 +174,193 @@
         position: absolute;
         top: 0;
         display: grid;
-        place-items: center;
-        border: solid 0.5px white 
+        place-items: center; 
     }
 
         .firstView_inner_text_container{
             width: 350px;
             height: 550px;
-            border: solid 0.5px yellow;
+            position: relative;
         }
+
+            .firstView_inner_text_container h1, .firstView_inner_text_container h2, .firstView_inner_text_container h3{
+                font-family: "Noto Serif JP", serif;
+                font-optical-sizing: auto;
+                font-weight: 700;
+                font-style: normal;
+                font-size: 32px;
+                color: #fcfcfc;
+                position: absolute;
+                top: 20px;
+            }
+
+            .firstView_inner_text_container h2{
+                font-weight: 400;
+                font-size: 24px;
+                top: 60px;
+                line-height: 2rem;
+            }
+
+            .firstView_inner_text_container h3{
+                font-size: 24px;
+                top: 280px;
+                line-height: 2rem;
+            }
+
+                .textRed{
+                    color: #e5004f;
+                    font-size: 32px;
+                }
+
+            .description_btn{
+                width: 250px;
+                height: 50px;
+                background-color: rgba(0, 153, 68, 0.7);
+                border-radius: 5px;
+                position: absolute;
+                top: 380px;
+                display: grid;
+                place-items: center;
+            }
+
+                .description_btn p{
+                    font-family: "Noto Sans JP", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 700;
+                    font-style: normal;
+                    font-size: 20px;
+                    color: #fcfcfc;
+                }
+
+/*FOR SE or 13MINI*/
+@media(max-width: 350px){
+    .firstView_inner_text_container{
+        width: 300px;
+        border: solid 0.5px blue;
+    }
+
+        .firstView_inner_text_container h1{
+            font-size: 28px;
+        }
+
+        .firstView_inner_text_container h2{
+            font-size: 22px;
+        }
+
+        .firstView_inner_text_container h3{
+            font-size: 22px;
+        }
+
+            .textRed{
+                font-size: 28px;
+            }
+}
+
+/*FOR TABLET*/
+@media(min-width: 768px){
+    .firstView_inner_text_container{
+        width: 768px;
+    }
+
+        .firstView_inner_text_container h1, .firstView_inner_text_container h2, .firstView_inner_text_container h3, .description_btn{
+            left: 10px;
+        }
+
+        .firstView_inner_text_container h1{
+            top: 50px;
+            font-size: 48px;
+        }
+
+        .firstView_inner_text_container h2{
+            top: 110px;
+            font-size: 32px;
+            line-height: 2.5rem;
+        }
+
+        .firstView_inner_text_container h3{
+            font-size: 32px;
+            line-height: 2.5rem;
+        }
+
+            .textRed{
+                font-size: 40px;
+            }
+
+        .description_btn{
+            top: 400px;
+            width: 300px;
+        }
+
+            .description_btn p{
+                font-size: 24px;
+            }
+}
+
+/*FEATURE*/
+.feature_container{
+    width: 100%;
+    height: 750px;
+    background: linear-gradient(to right, #d7e7af 0%, #fcfcfc 100%);
+    display: grid;
+    place-items: center;
+}
+
+    .feature_inner_container{
+        width: 350px;
+        height: 750px;
+        border: solid 0.5px red;
+    }
+
+        .feature_inner_title_container{
+            width: 100%;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: solid 0.5px blue;
+        }
+
+            .feature_inner_title_container h2{
+                font-family: "Noto Serif JP", serif;
+                font-optical-sizing: auto;
+                font-weight: 700;
+                font-style: normal;
+                font-size: 24px;
+                width: 15rem;
+                text-align: center;
+                line-height: 2rem;
+            }
+
+            .feature_inner_title_container h3{
+                font-family: "Noto Serif JP", serif;
+                font-optical-sizing: auto;
+                font-weight: 700;
+                font-style: normal;
+                font-size: 20px;
+                color: #c70008;
+                margin-top: 10px;
+            }
+
+        .feature_inner_contents_container{
+            width: 100%;
+            height: 600px;
+            background-color: rgba(0, 153, 68, 0.3);
+        }
+
+            .feature_inner_contents_text_container{
+                width: 100%;
+                height: 185px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                border: solid 0.5px black;
+            }
+
+                .rectangle{
+                    width: 165px;
+                    height: 165px;
+                    background: linear-gradient(to bottom, #FEECD2 0%, #fcfcfc 100%);
+                    border: solid 0.5px red;
+                }
