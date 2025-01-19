@@ -308,7 +308,6 @@
     .feature_inner_container{
         width: 350px;
         height: 750px;
-        border: solid 0.5px red;
     }
 
         .feature_inner_title_container{
@@ -318,7 +317,6 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            border: solid 0.5px blue;
         }
 
             .feature_inner_title_container h2{
@@ -344,7 +342,7 @@
 
         .feature_inner_contents_container{
             width: 100%;
-            height: 600px;
+            height: 560px;
             background-color: rgba(0, 153, 68, 0.3);
         }
 
@@ -355,12 +353,217 @@
                 justify-content: center;
                 align-items: center;
                 gap: 10px;
-                border: solid 0.5px black;
             }
 
                 .rectangle{
                     width: 165px;
                     height: 165px;
                     background: linear-gradient(to bottom, #FEECD2 0%, #fcfcfc 100%);
-                    border: solid 0.5px red;
                 }
+
+                    .rectangle h4, .rectangle p{
+                        font-family: "Noto Serif JP", serif;
+                        font-optical-sizing: auto;
+                        font-weight: 700;
+                        font-style: normal;
+                        font-size: 16px;
+                        color: #343434;
+                        margin-top: 10px;
+                        margin-left: 5px;
+                        margin-right: 5px;
+                    }
+
+                    .rectangle p{
+                        font-weight: 400;
+                    }
+
+/*FOR DESKTOP*/
+@media(min-width: 768px){
+    .feature_inner_container{
+        width: 768px;
+    }
+
+    .feature_inner_title_container h2{
+        width: auto;
+        font-size: 28px;
+    }
+
+    .feature_inner_title_container h3{
+        font-size: 24px;
+    }
+
+    .feature_inner_contents_container{
+        display: flex;
+        height: 550px;
+    }
+
+    .feature_inner_contents_text_container{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .rectangle{
+        width: 240px;
+        height: 250px;
+    }
+
+        .rectangle h4{
+            font-size: 22px;
+        }
+
+        .rectangle p{
+            font-size: 20px;
+        }
+}
+
+/*FOR SE and 13MINI*/
+@media(max-width: 350px){
+    .feature_inner_container{
+        width: 300px;
+    }
+
+        .feature_inner_title_container h3{
+            font-size: 18px;
+        }
+
+        .rectangle{
+            width: 140px;
+        }
+
+        .rectangle h4, .rectangle p{
+            font-size: 14px;
+        }
+}
+
+/*EMPATHY*/
+.empathy_container{
+    width: 100%;
+    height: 996px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, #343434 0%, #9a9a9a 100%);
+}
+
+    .empathy_title_container{
+        width: 100%;
+        height: 106px;
+        display: grid;
+        place-items: center;
+    }
+
+        .empathy_title_container h2{
+            font-family: "Kaisei Decol", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 24px;
+            color: #fcfcfc;
+        }
+
+    .empathy_contents_container{
+        width: 350px;
+        height: 840px;
+    }
+
+        .empathy_contents_inner_container{
+            width: 350px;
+            height: 420px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+            .empathy_contents_inner_container ol li{
+                font-family: "Shippori Mincho", serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 20px;
+                color: #fcfcfc;
+                line-height: 1.5rem;
+            }
+
+            .empathy_contents_inner_container ol li:not(:first-child){
+                margin-top: 10px;
+            }
+
+/*FOR SE or 13MINI*/
+@media(max-width: 350px){
+    .empathy_title_container h2{
+        font-size: 20px;
+    }
+
+    .empathy_contents_container{
+        width: 300px;
+    }
+
+        .empathy_contents_inner_container{
+            width: 300px;
+        }
+
+            .empathy_contents_inner_container img{
+                width: 300px;
+                height: auto;
+            }
+
+            .empathy_contents_inner_container ol li{
+                font-size: 16px;
+            }
+}
+
+/*FOR DESKTOP*/
+@media(min-width: 768px){
+    .empathy_container{
+        height: 526px;
+        justify-content: center;
+    }
+
+    .empathy_title_container h2{
+        font-size: 36px;
+    }
+
+    .empathy_contents_container{
+        width: 768px;
+        height: 420px;
+        display: flex;
+        align-items: center;
+    }
+
+    .empathy_contents_inner_container{
+        width: 384px;
+    }
+
+        .empathy_contents_inner_container img{
+            width: 384px;
+            height: auto;
+        }
+
+        .empathy_contents_inner_container ol{
+            margin-left: 10px;
+        }
+}
+
+/*SOLUTIOM RECOMMEMD PLAN*/
+.recommendPlan_container{
+    width: 100%;
+    height: 1350px;
+}
+
+    .recommendPlan_title_container{
+        width: 100%;
+        height: 100px;
+    }
+
+    .recommendPlan_contents_container{
+        width: 100%;
+        height: 1200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: solid 0.5px red;
+    }
+
+        .recommendPlan_contents_inner_container{
+            width: 350px;
+            height: 400px;
+            border: solid 0.5px blue;
+        }
