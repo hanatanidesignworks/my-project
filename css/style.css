@@ -1455,7 +1455,8 @@
                 color: #10662b;
                 font-weight: 700;
             }
-            
+
+    /*        
     .callToAction_button_container{
         width: 100%;
         height: 100px;
@@ -1480,18 +1481,44 @@
                 font-size: 24px;
                 color: #fcfcfc;
             }
+    */
 
-        @media(max-width: 350px){
-            .callToAction_heading_container h2{
-                font-size: 16px;
-            }
+    .contact_form_container{
+        width: 100%;
+        height: 450px;
+        margin-top: 10px;
+        padding-top: 20px;
+        background-color: #d7e7af;
+    }
 
-            .callToAction_upperText_container p{
-                font-size: 16px;
-            }
+        .contact_form_container p{
+            font-family: "Noto Sans JP", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        .contact_form_inner_container{
+            width: 100%;
+            height: 300px;
+            margin-top: 20px;
         }
 
         @media(min-width: 768px){
+            .contact_form_container p{
+                width: 768px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .contact_form_inner_container{
+                width: 768px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
             .callToAction_heading_container h2{
                 font-size: 32px;
             }
@@ -1505,6 +1532,76 @@
                 line-height: 2rem;
             }
         }
+
+            .form{
+                width: 100%;
+                height: 250px;
+                display: grid;
+                grid-template-columns: 10px 80px auto 10px;
+                grid-template-rows: 30px 30px 100px 30px auto;
+                row-gap: 15px;
+                column-gap: 10px;
+            }
+
+            .usernamelabel{
+                grid-column: 2 / 3;
+            }
+            
+            .username{
+                grid-column: 3 / 4;
+            }
+            
+            .emaillabel{
+                grid-column: 2 / 3;
+                grid-row: 2 / 2;
+            }
+            
+            .email{
+                grid-column: 3 / 4;
+                grid-row: 2 / 2;
+            }
+            
+            .comentslabel{
+                grid-column: 2 / 3;
+                grid-row: 3 / 3;
+            }
+            
+            .coments{
+                grid-column: 3 / 4;
+                grid-row: 3 / 3;
+            }
+            
+            .submit{
+                grid-column: 3 / 4;
+                grid-row: 4 / 4;
+                max-width: 112px;
+            }
+            
+            label{
+                text-align: right;
+            }
+
+            #nameerror,
+            #emailerror{
+                color: #ff0000;
+                font-size: 14px;
+                margin: 0;
+            }
+
+            .frame{
+                margin: 0;
+            }
+
+/*CTA -SE AND 13MINI-*/
+@media(max-width: 350px){
+    .callToAction_heading_container h2{
+        font-size: 16px;
+    }
+
+    .callToAction_upperText_container p{
+        font-size: 16px;
+    }
+}
 
 /*FOOTER*/
 .footer_container{
@@ -1530,4 +1627,23 @@
     .footer_container p{
         width: auto;
     }
+}
+
+/*sendmail.php*/
+.res{
+    width: 330px;
+    height: 330px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border: solid black;
+}
+
+.res p{
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
 }

@@ -799,14 +799,48 @@
 						<p>コストを抑えてスピーディーにスタート<br>まずはご相談ください</p>
 					</div>
 					<div class="callToAction_upperText_container underText">
-						<p>公式ラインに登録していただくと、<br>
+						<!--
+							<p>公式ラインに登録していただくと、<br>
+							さらに１セクションが無料になります。</p>
+						-->
+						<p>問い合わせフォームからご連絡頂くと<br>
 							さらに１セクションが無料になります。</p>
 					</div>
-					<div class="callToAction_button_container">
-						<div class="callToAction_ctaButton_container">
-							<p>公式ラインに登録する</p>
+
+					<!--
+						<div class="callToAction_button_container">
+							<div class="callToAction_ctaButton_container">
+								<p>公式ラインに登録する</p>
+							</div>
 						</div>
+					-->
+
+					<div class="contact_form_container">
+						<p>※下記の問い合わせフォームからご連絡ください</p>
+						<!--FORM-->
+						<div class="contact_form_inner_container">
+
+							<form action="sendmail.php" method="post" class="form" id="myForm">
+
+									<label for="username" class="usernamelabel">お名前:</label>
+									<input type="text" id="username" name="username" class="username" maxlength="10" placeholder="山田太郎" autocomplete="off" required>
+				
+									<label for="email" class="emaillabel">メール:</label>
+									<input type="text" id="email" class="email" name="email" placeholder="sample@sample.com" autocomplete="off" required>
+									
+									<label for="coments" class="comentslabel">コメント：</label>
+									<textarea id="coments" class="coments" name="coments" rows="4" cols="20" maxlength="200" placeholder="コメント（最大200文字まで）"></textarea><br><br>
+									
+									<input type="submit" id="submit" class="submit" value="Submit" disabled>
+							
+							</form>
+							<p id="nameerror"></p>
+							<p id="emailerror"></p>
+
+						</div>
+						<p class="frame">※24時間以内に担当からご連絡差し上げます。</p>
 					</div>
+					
 				</div>
 			</section>
 
@@ -819,6 +853,86 @@
 			</div>
 
 		</footer>
+
+		<script>
+            window.addEventListener("DOMContentLoaded", function(){
+
+                //イベントリスナの登録
+                let userNameInput = document.getElementById("username");
+                //入力された時のチェック
+                userNameInput.addEventListener("input", checkInput);
+                //フォーカスが外れた時のチェック
+                userNameInput.addEventListener("blur", checkInput);
+
+                let emailInput = document.getElementById("email");
+                emailInput.addEventListener("input", checkInput);
+                emailInput.addEventListener("blur", checkInput);
+
+                //バリデーション用関数
+                function checkInput(){
+                    //submitボタン有効化フラグ
+                    let buttonEnabled = true;
+
+                    //入力された名前の値を取得
+                    let userName = userNameInput.value;
+                    //名前のバリデーションメッセージを表示するp要素を取得
+                    let userNameInputMsg = document.getElementById("nameerror");
+                    //Regex
+                    let nameRegex = /[a-zA-Z!@#$%^&*(),.?":{}|<>]/;
+
+                    //未入力なら
+                    if(userName.length === 0){
+                        //submitボタンの無効化
+                        buttonEnabled = false;
+                        //バリデーションメッセージを表示
+                        userNameInputMsg.textContent = "名前を入力してください。";
+                                                
+                    } else if(nameRegex.test(userName)){
+                        //submitボタンの無効化
+                        buttonEnabled = false;
+                        //バリデーションメッセージを表示
+                        userNameInputMsg.textContent = "半角の記号や英数字は入力できません。";
+                        //入力値が適切なら
+                    } else {
+                        //バリデーションメッセージを削除
+                        userNameInputMsg.textContent = "";                                                                                                               
+                    }
+
+                    let email = emailInput.value;
+                    let emailInputMsg = document.getElementById("emailerror");
+                    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if(email.length === 0){
+                        buttonEnabled = false;
+                        emailInputMsg.textContent = "メールアドレスを入力してください。";
+                    } else if(!emailRegex.test(email)){
+                        buttonEnabled = false;
+                        emailInputMsg.textContent = "正しい形式のメールアドレスを入力してください。";
+                    } else {
+                        emailInputMsg.textContent = "";
+                    }   
+
+                    //Get submit button element
+                    let submitButton = document.getElementById("submit");
+
+                    //If submit button is valid
+                    if(buttonEnabled){
+                        //Delete disabled attribute
+                        submitButton.removeAttribute("disabled");
+                        //If submit button is invalid
+                    } else {
+                        submitButton.setAttribute("disabled", "disabled");
+                    }
+                }
+            });
+
+            window.onload = function() {
+                let inputElement = document.getElementById("username");
+                let mailInputElement = document.getElementById("email");
+                inputElement.value = "";
+                mailInputElement.value = "";
+            };
+
+        </script>
 			
 	</body>
 </html>
